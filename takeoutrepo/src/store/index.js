@@ -1,0 +1,19 @@
+/*
+vuex最核心的管理对象store
+ */
+import Vue from "vue";
+import Vuex from "vuex";
+import state from "./state";
+import mutations from "./mutations";
+import actions from "./actions";
+import getters from "./getters";
+
+Vue.use(Vuex); //声明使用
+
+export default new Vuex.Store({
+  state,
+  mutations,
+  actions,
+  getters,
+});
+//配置vuex的属性对象
